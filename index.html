@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth focus:scroll-auto">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TukangIn-Pemesanan Tukang Online</title>
+    <link rel="icon" href="assets/logo.png">
+
+    <!-- css -->
+    <link rel="stylesheet" href="style.css" />
+    <!-- tailwind -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Poppins:wght@400;900&display=swap" rel="stylesheet" />
+  </head>
+  <body>
+    <!-- start sidebar -->
+    <nav>
+      <div class="sidebar-top">
+        <a href="#" class="logo__wrapper">
+          <img src="assets/logo.png" alt="Logo" class="logo" />
+          <img src="assets/logo.png" alt="Logo" class="logo-small" />
+        </a>
+      </div>
+      <div class="sidebar-links">
+        <ul>
+          <li>
+            <a href="#beranda" title="beranda" class="tooltip">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                <path d="M5 12l-2 0l9 -9l9 9l-2 0"></path>
+                <path d="M5 12v7a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-7"></path>
+                <path d="M10 12h4v4h-4z"></path>
+              </svg>
+              <span class="link hide">Beranda</span>
+              <span class="tooltip__content">Beranda</span>
+            </a>
+          </li>
+          <li>
+            <a href="#layanan" title="layanan" class="tooltip">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="icon icon-tabler icon-tabler-layout-dashboard"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                stroke-width="2"
+                stroke="currentColor"
+                fill="none"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                <path d="M4 4h6v8h-6z"></path>
+                <path d="M4 16h6v4h-6z"></path>
+                <path d="M14 12h6v8h-6z"></path>
+                <path d="M14 4h6v4h-6z"></path>
+              </svg>
+              <span class="link hide">Layanan</span>
+              <span class="tooltip__content">Layanan</span>
+            </a>
+          </li>
+          <li>
+            <a href="#gallery" title="gallery" class="tooltip">
+              <div style="position: relative">
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-graph" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                  <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                  <path d="M4 18v-12a2 2 0 0 1 2 -2h12a2 2 0 0 1 2 2v12a2 2 0 0 1 -2 2h-12a2 2 0 0 1 -2 -2z"></path>
+                  <path d="M7 14l3 -3l2 2l3 -3l2 2"></path>
+                </svg>
+                <div class="notification"></div>
+              </div>
+              <span class="link hide">Gallery</span>
+              <span class="tooltip__content">Gallery</span>
+            </a>
+          </li>
+          <li>
+            <a href="#mitra" title="mitra" class="tooltip">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                <path d="M12 17.75l-6.172 3.245l1.179 -6.873l-5 -4.867l6.9 -1l3.086 -6.253l3.086 6.253l6.9 1l-5 4.867l1.179 6.873z"></path>
+              </svg>
+              <span class="link hide">Mitra Kami</span>
+              <span class="tooltip__content">Mitra Kami</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div class="expand-btn absolute bottom-5 z-50">
+        <img src="assets/right-collapse.svg" alt="Left Collapse" />
+        <span class="hide"> Perkecil </span>
+      </div>
+    </nav>
+    <!-- finish sidebar -->
+
+    <!-- start hero -->
+    <section class="ms-24 relative -z-10">
+      <img src="assets/g-5.jpg" alt="Hero" class="h-screen object-cover w-screen brightness-50" />
+      <h1 class="text-4xl ms-5 text-white font-extrabold tracking-wider absolute top-24 left-0 w-2/3 lg:ms-24 lg:w-1/2 lg:text-7xl md:top-32">Dengan <span class="text-[#02c39a]">TukangIn</span> Semua Dapat Dibuat & Diperbaiki.</h1>
+    </section>
+    <!-- finish hero -->
+
+    <!-- start perkenalan -->
+    <section id="beranda" class="ms-24 my-20">
+      <div>
+        <h2 class="text-center text-2xl text-slate-900 font-semibold lg:text-5xl">Kenalin Kami, <span class="text-[#02c39a]">TukangIn</span>.</h2>
+        <h2 class="text-center text-xl text-slate-900 font-semibold lg:text-2xl">Pemesanan <span class="text-[#02c39a]">Tukang</span> Terluas Seluruh Indonesia</h2>
+      </div>
+
+      <div class="flex flex-wrap justify-center">
+        <div class="w-full box-border border-2 border-slate-300 rounded-lg m-5 mt-10 overflow-hidden lg:w-1/4">
+          <div class="bg-[#02c39a]">
+            <h4 class="text-lg font-semibold w-2/3 ms-3 text-slate-900">Pencetus Ide dengan Perubahan Baru</h4>
+          </div>
+          <hr />
+          <div class="sub-detail m-3">
+            <p class="text-sm font-extralight text-slate-600">Kami memberikan anda sebuah oenawaran segar berupa kinerja yang berbeda. Dengan ide baru, kami memberikan anda pengalaman yang berbeda dalam menggunakan layanan kami.</p>
+          </div>
+        </div>
+
+        <div class="w-full box-border border-2 border-slate-300 rounded-lg m-5 overflow-hidden lg:w-1/4 lg:mt-10">
+          <div class="bg-[#02c39a]">
+            <h4 class="text-lg font-semibold w-2/3 ms-3 text-slate-900">Bergerak di Bidang yang Berbeda</h4>
+          </div>
+          <hr />
+          <div class="sub-detail m-3">
+            <p class="text-sm font-extralight text-slate-600">
+              Kami bergerak dengan ide baru dan berbeda. Perusahaan kami bergerak di bidang pertukangan online yang memberikan semangat baru bagi tukang-tukang seluruh Indonesia untuk maju ke era digital.
+            </p>
+          </div>
+        </div>
+
+        <div class="w-full box-border border-2 border-slate-300 rounded-lg m-5 overflow-hidden lg:w-1/4 lg:mt-10">
+          <div class="bg-[#02c39a]">
+            <h4 class="text-lg font-semibold w-2/3 ms-3 text-slate-900">Seluruh Wilayah Indonesia</h4>
+          </div>
+          <hr />
+          <div class="sub-detail m-3">
+            <p class="text-sm font-extralight text-slate-600">Layanan kami tersebar di seluruh wilayah Indonesia. coba layanan kami di wilayah anda dan rasakan pengalaman baru dalam era digital pertukangan !</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- finish perkenalan -->
+
+    <!-- start layanan -->
+    <section id="layanan" class="ms-24 mt-20 bg-[#05668d] py-20">
+      <div>
+        <h2 class="text-center text-3xl font-semibold text-white tracking-wide lg:text-5xl"><span class="text-[#02c39a]">Layanan</span> Kami</h2>
+        <p class="text-center text-sm font-light text-white mt-2 mx-4">Temukan layanan yang sesuai dengan kebutuhan anda dan temukan <span class="text-[#02c39a]">tukang-tukang berpengalaman </span> di sekitar anda.</p>
+      </div>
+
+      <div class="container">
+        <div class="flex flex-wrap mt-20 justify-center">
+          <div class="w-full m-5 border-2 border-slate-400 rounded-lg bg-white shadow-xl md:w-1/4 hover:scale-110 hover:bg-[#c7f9cc] transition-all">
+            <a href="layanan/perbaikan.html">
+              <img src="assets/perbaikan.png" alt="card-1" class="rounded-sm w-1/2 m-auto" />
+              <h4 class="text-xl font-semibold p-5 text-center text-[#02c39a]">Reparasi / Perbaikan</h4>
+              <p class="text-base font-extralight p-4">Layanan Reparasi / Perbaikan berfokus pada layanan memperbaiki sesuatu, baik bangunan maupun alat alat rumah tangga yang rusak. Kami disini menawarkan tukang-tukang berpengalaman yang akan membantu anda memperbaiki apa saja yang anda butuhkan.</p></a
+            >
+          </div>
+
+          <div class="w-full m-5 border-2 border-slate-400 rounded-lg bg-white shadow-xl md:w-1/4 hover:scale-110 hover:bg-[#c7f9cc] transition-all">
+            <a href="layanan/pembuatan.html">
+              <img src="assets/pembuatan.png" alt="card-1" class="rounded-sm w-1/2 m-auto" />
+              <h4 class="text-xl font-semibold p-5 text-center text-[#02c39a]">Pembuatan / Pembangunan</h4>
+              <p class="text-base font-extralight p-4">Layanan ini sendiri terkhusus untuk membuat atau membangun sebuah bangunan atau gedung. tentunya layanan ini hanya tersedia dalam bentuk Team Work agar pekerjaan dapat dikerjakan, karena membangun juga butuh usaha. Dengan cara ini, anda dapat membangun apapun yang anda butuhkan dengan tukang terpercaya.</p></a
+            >
+          </div>
+
+          <div class="w-full m-5 border-2 border-slate-400 rounded-lg bg-white shadow-xl md:w-1/4 hover:scale-110 hover:bg-[#c7f9cc] transition-all">
+            <a href="layanan/desain.html">
+              <img src="assets/desain.png" alt="card-1" class="rounded-sm w-1/2 m-auto" />
+              <h4 class="text-xl font-semibold p-5 text-center text-[#02c39a]">Desain Arsitektur</h4>
+              <p class="text-base font-extralight p-4">Anda membutuhkan desain bangunan atau bahkan gedung ? Layanan ini sangat cocok untuk anda yang ingin mendesainkan sebuah bangunan. Arsitek kami sangat berpengalaman untuk memberikan anda pengalaman mendesain yang berbeda dan tak terlupakan.</p></a
+            >
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- finish layanan -->
+
+    <!-- start gallery -->
+    <section id="gallery" class="ms-24 mt-20 pb-20">
+      <div>
+        <h2 class="text-center text-3xl text-slate-900 font-semibold tracking-wide lg:text-4xl">Yuk Kepoin <span class="text-[#02c39a]">Gallery</span> TukangIn 🧐</h2>
+      </div>
+
+      <div class="flex flex-wrap mt-10 justify-evenly">
+        <div class="w-full mx-8 mt-5 md:w-1/5 md:mx-2">
+          <img src="assets/g-1.jpeg" alt="gallery-1" class="rounded-lg border-2 border-[#05668d] md:h-40 w-full hover:scale-110 transition-all cursor-pointer" />
+        </div>
+
+        <div class="w-full mx-8 mt-5 md:w-1/5 md:mx-2">
+          <img src="assets/g-2.jpeg" alt="gallery-2" class="rounded-lg border-2 border-[#05668d] md:h-40 w-full hover:scale-110 transition-all cursor-pointer" />
+        </div>
+
+        <div class="w-full mx-8 mt-5 md:w-1/5 md:mx-2">
+          <img src="assets/g-3.jpg" alt="gallery-3" class="rounded-lg border-2 border-[#05668d] md:h-40 w-full hover:scale-110 transition-all cursor-pointer" />
+        </div>
+
+        <div class="w-full mx-8 mt-5 md:w-1/5 md:mx-2">
+          <img src="assets/g-4.jpg" alt="gallery-4" class="rounded-lg border-2 border-[#05668d] md:h-40 w-full hover:scale-110 transition-all cursor-pointer" />
+        </div>
+
+        <div class="w-full mx-8 mt-5 md:w-1/5 md:mx-2">
+          <img src="assets/g-5.jpg" alt="gallery-5" class="rounded-lg border-2 border-[#05668d] md:h-40 w-full hover:scale-110 transition-all cursor-pointer" />
+        </div>
+
+        <div class="w-full mx-8 mt-5 md:w-1/5 md:mx-2">
+          <img src="assets/g-6.jpg" alt="gallery-6" class="rounded-lg border-2 border-[#05668d] md:h-40 w-full hover:scale-110 transition-all cursor-pointer" />
+        </div>
+
+        <div class="w-full mx-8 mt-5 md:w-1/5 md:mx-2">
+          <img src="assets/g-7.jpeg" alt="gallery-7" class="rounded-lg border-2 border-[#05668d] md:h-40 w-full hover:scale-110 transition-all cursor-pointer" />
+        </div>
+
+        <div class="w-full mx-8 mt-5 md:w-1/5 md:mx-2">
+          <img src="assets/g-8.jpeg" alt="gallery-8" class="rounded-lg border-2 border-[#05668d] md:h-40 w-full hover:scale-110 transition-all cursor-pointer" />
+        </div>
+      </div>
+    </section>
+    <!-- finish gallery -->
+
+    <!-- start mitra -->
+    <section id="mitra" class="ms-24 mt-20 py-20 bg-[#05668d]">
+      <div>
+        <h2 class="text-center text-3xl text-white font-semibold tracking-wide lg:text-4xl">Kalian Tertarik Menjadi <span class="text-[#02c39a]">Mitra</span></h2>
+        <h2 class="text-center text-3xl text-white font-semibold tracking-wide lg:text-4xl">TukangIn ?</h2>
+      </div>
+
+      <button type="button" class="block m-auto mt-10 p-7 text-xl font-semibold tracking-wider bg-[#02c39a] rounded-full hover:scale-125 transition-all"><a href="mitra/mitra.html">Yuk Gabung !</a></button>
+    </section>
+    <!-- finish mitra -->
+
+    <!-- start footer -->
+    <section class="ms-24 pt-20 bg-[#02c39a]">
+      <footer class="flex flex-wrap justify-start ps-5 xl:ps-24">
+        <div class="w-1/4 -mt-5 me-4 pt-10 lg:-mt-16">
+          <a href="index.html"><img src="assets/logo.png" alt="logo" class="w-full" /></a>
+        </div>
+
+        <div class="w-1/3 me-10 pt-10 md:me-0 md:w-1/4  lg:w-1/6">
+          <h5 class="text-base font-semibold mb-1">Contact Person</h5>
+          <ul>
+            <li class="text-sm font-light text-slate-700 mb-2"><a href="https://wa.me/+6282345678910" target="_blank">+62823 4567 8910</a></li>
+            <li class="text-sm font-light text-slate-700 mb-2"><a href="https://mail.google.com/" target="_blank">TukangIn@tukang.com</a></li>
+          </ul>
+        </div>
+
+        <div class="w-1/4 me-4 pt-10 md:me-0 md:w-1/6">
+          <h5 class="text-base font-semibold mb-1">Tentang Kami</h5>
+          <ul>
+            <li class="text-sm font-light text-slate-700 mb-2"><a href="#mitra">Mitra</a></li>
+            <li class="text-sm font-light text-slate-700 mb-2"><a href="https://mail.google.com/" target="_blank">Email</a></li>
+            <li class="text-sm font-light text-slate-700 mb-2"><a href="https://www.instagram.com/muhammad_bobby_o/" target="_blank">Social Media</a></li>
+          </ul>
+        </div>
+
+        <div class="w-1/4 me-12 pt-10 md:me-0 md:w-2/12">
+          <h5 class="text-base font-semibold mb-1">Produk</h5>
+          <ul>
+            <li class="text-sm font-light text-slate-700 mb-2"><a href="layanan/perbaikan.html" target="_blank">Perbaikan</a></li>
+            <li class="text-sm font-light text-slate-700 mb-2"><a href="layanan/pembuatan.html" target="_blank">Pembangunan</a></li>
+            <li class="text-sm font-light text-slate-700 mb-2"><a href="layanan/desain.html" target="_blank">Desain</a></li>
+          </ul>
+        </div>
+
+        <div class="w-1/4 me-4 pt-10 md:me-0 md:w-1/6">
+          <h5 class="text-base font-semibold">Other</h5>
+          <ul>
+            <li class="text-sm font-light text-slate-700 mb-2"><a href="#mitra">Mitra Kami</a></li>
+        </div>
+      </footer>
+      <p class="text-xs font-light text-slate-600 pt-20 text-center pb-3">copyright&copy;, Create By <a href="https://www.instagram.com/muhammad_bobby_o/" target="_blank">Muhammad Bobby</a></p>
+    </section>
+    <!-- finish footer -->
+
+    <script src="script.js"></script>
+  </body>
+</html>

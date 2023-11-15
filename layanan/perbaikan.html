@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Layanan Perbaikan</title>
+
+    <link rel="icon" href="../assets/logo.png">
+    
+    <!-- css -->
+    <link rel="stylesheet" href="layanan.css" />
+    <!-- tailwind -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Poppins:wght@400;900&display=swap" rel="stylesheet" />
+  </head>
+  <body>
+    <div class="container">
+      <h1 class="text-6xl font-extrabold text-slate-800 mt-20 ms-2 mb-10 tracking-wide md:text-8xl lg:text-9xl lg:ms-5">REPARASI / <span class="text-[#02c39a] inline-block mt-3 lg:mt-5">PERBAIKAN</span></h1>
+      <p class="text-center text-xl font-semibold tracking-wide md:text-2xl lg:text-4xl lg:mt-14">Anda Ingin <span class="text-[#69dbc3]">Memperbaiki</span> Apa ? 🤔</p>
+    </div>
+
+    <section id="personal" class="mt-36 mx-3">
+      <h3 class="text-base font-medium md:text-lg lg:text-2xl">Perbaikan Rumah / Gedung (<span class="text-[#69dbc3]">Personal</span>)</h3>
+      <div class="under ms-5 mt-3 w-[20%] h-[1px] bg-black"></div>
+
+      <div class="flex justify-center items-center my-10">
+        <div class="table-widget md:overflow-hidden">
+          <table>
+            <caption>
+              Tukang Di Sekitarmu 📍
+              <span class="table-row-count"></span>
+            </caption>
+            <thead>
+              <tr>
+                <th>Nama</th>
+                <th>Status*</th>
+                <th>Keahlian Kerja</th>
+                <th>Hubungi</th>
+              </tr>
+            </thead>
+            <tbody id="team-member-personal">
+              <!--? rows are generated -->
+            </tbody>
+            <tfoot>
+              <tr>
+                <td colspan="4">
+                  <ul class="pagination">
+                    <!--? generated pages -->
+                  </ul>
+                </td>
+              </tr>
+            </tfoot>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <section id="team" class="mt-20 lg:mt-36 mx-3">
+      <h3 class="text-base font-medium md:text-lg lg:text-2xl">Perbaikan Rumah / Gedung (<span class="text-[#69dbc3]">Team</span>)</h3>
+      <div class="under ms-5 mt-3 w-[20%] h-[1px] bg-black"></div>
+
+      <div class="flex justify-center items-center my-10">
+        <div class="table-widget md:overflow-hidden">
+          <table>
+            <caption>
+              Team Tukang Di Sekitarmu 📍
+              <span class="table-row-sit"></span>
+            </caption>
+            <thead>
+              <tr>
+                <th>Nama Team</th>
+                <th>Status*</th>
+                <th>Keahlian Kerja</th>
+                <th>Hubungi</th>
+              </tr>
+            </thead>
+            <tbody id="team-member-team">
+              <!--? rows are generated -->
+            </tbody>
+            <tfoot>
+              <tr>
+                <td colspan="4">
+                  <ul class="pagination2">
+                    <!--? generated pages -->
+                  </ul>
+                </td>
+              </tr>
+            </tfoot>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <!-- other fitur -->
+    <section class="mt-36 py-10 bg-[#05668d]">
+      <h2 class="text-center text-white text-4xl font-bold py-16">Anda Butuh yang Ahli <span class="text-[#69dbc3]">Dibidang</span> nya ?</h2>
+
+      <div class="fitur-1 mx-4 lg:mx-7 ">
+        <h2 class="text-lg font-semibold mb-1 lg:text-xl">Perawatan / Perbaikan Mega Gedung</h2>
+        <p class="text-slate-300 text-sm font-extralight">
+          Perawatan sebuah gedung memanglah membutuhkan seborang ahli khusus untuk melakukannya. Bahkan dibutuhkan pelatihan dan pemahaman yang mumpuni untuk bisa melakukan hal tersebut. oleh karena itu kami menyarankan anda untuk
+          menggunakan Tenaga Ahli Profesional di bidang ini. <a href="" class="text-[#69dbc3]"> Klik untuk Cek Detail >></a>
+        </p>
+      </div>
+
+      <div class="fitur-2 mx-4 mt-10 lg:mx-7">
+        <h2 class="text-lg font-semibold mb-1 lg:text-xl">Instalasi Listrik Tingkat Lanjut</h2>
+        <p class="text-slate-300 text-sm font-extralight">
+          instalasi Listrik Tingkat Lanjut adalah sebuah instalasi jaringan listrik untuk berkelanjutan, dimana listrik yang dipasang adalah jaringan listrik besar baik untuk rumah mauoun gedung. oleh karena itu kami menyarankan anda untuk
+          menggunakan tenaga ahli profesional di bidangnya. <a href="" class="text-[#69dbc3]"> Klik untuk Cek Detail >></a>
+        </p>
+      </div>
+    </section>
+    <!-- finish other fitur -->
+
+    <!-- start footer -->
+    <section class="pt-20 pb-10 bg-[#02c39a]">
+      <footer class="flex flex-wrap justify-start ps-5 xl:ps-24">
+        <div class="w-1/4 -mt-5 me-4 pt-10 lg:-mt-16">
+          <a href="../index.html"><img src="../assets/logo.png" alt="logo" class="w-full" /></a>
+        </div>
+
+        <div class="w-1/3 me-10 pt-10 md:me-0 md:w-1/4  lg:w-1/6">
+          <h5 class="text-base font-semibold mb-1">Contact Person</h5>
+          <ul>
+            <li class="text-sm font-light text-slate-700 mb-2"><a href="https://web.whatsapp.com" target="_blank">+62823 4567 8910</a></li>
+            <li class="text-sm font-light text-slate-700 mb-2"><a href="https://mail.google.com/" target="_blank">TukangIn@tukang.com</a></li>
+          </ul>
+        </div>
+
+        <div class="w-1/4 me-4 pt-10 md:me-0 md:w-1/6">
+          <h5 class="text-base font-semibold mb-1">Tentang Kami</h5>
+          <ul>
+            <li class="text-sm font-light text-slate-700 mb-2"><a href="../index.html">Mitra</a></li>
+            <li class="text-sm font-light text-slate-700 mb-2"><a href="" target="_blank">Visi & Misi</a></li>
+            <li class="text-sm font-light text-slate-700 mb-2"><a href="https://mail.google.com/" target="_blank">Email</a></li>
+            <li class="text-sm font-light text-slate-700 mb-2"><a href="" target="_blank">Support</a></li>
+          </ul>
+        </div>
+
+        <div class="w-1/4 me-12 pt-10 md:me-0 md:w-2/12">
+          <h5 class="text-base font-semibold mb-1">Produk</h5>
+          <ul>
+            <li class="text-sm font-light text-slate-700 mb-2"><a href="layanan/perbaikan.html" target="_blank">Perbaikan</a></li>
+            <li class="text-sm font-light text-slate-700 mb-2"><a href="layanan/pembuatan.html" target="_blank">Pembangunan</a></li>
+            <li class="text-sm font-light text-slate-700 mb-2"><a href="layanan/desain.html" target="_blank">Desain</a></li>
+          </ul>
+        </div>
+
+        <div class="w-1/4 me-4 pt-10 md:me-0 md:w-1/6">
+          <h5 class="text-base font-semibold">Other</h5>
+          <ul>
+            <li class="text-sm font-light text-slate-700 mb-2"><a href="#mitra">Mitra Kami</a></li>
+        </div>
+      </footer>
+      <p class="text-xs font-light text-slate-600 pt-20 text-center pb-3">copyright&copy;, Create By Muhammad Bobby</p>
+    </section>
+    <!-- finish footer -->
+
+    <!-- home -->
+    <section class="home bg-[#69dbc3] w-fit p-3 rounded-2xl fixed bottom-5 right-5">
+      <a href="../index.html">
+      <svg role="img" viewBox="0 0 24 24" width="30px" height="25px" class="m-auto" xmlns="http://www.w3.org/2000/svg"><title>Google Home</title><path d="M12 0a1.44 1.44 0 0 0-.947.399L.547 10.762a1.26 1.26 0 0 0-.342.808v11.138c0 .768.53 1.292 1.311 1.292h20.968c.78 0 1.311-.522 1.311-1.292V11.57a1.25 1.25 0 0 0-.34-.804L15.68 3.097h-.001L12.947.4A1.454 1.454 0 0 0 12 0Zm0 6.727 6.552 6.456v5.65H5.446v-5.65z"/></svg>
+      <p class="text-center text-xs font-semibold">Home</p>
+    </a>
+    </section>
+
+    <script src="script-perbaikan.js"></script>
+  </body>
+</html>

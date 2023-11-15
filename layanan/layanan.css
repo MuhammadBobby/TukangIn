@@ -1,0 +1,241 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+:root {
+  --background: #ebecf0;
+  --table-background: #69dbc3;
+  --primary: #101824;
+  --gray: #a0a7b1;
+  --odd-row: #69dbc3;
+  --gray-background: #edeef1;
+  --gray-mid: #f1f2f6;
+}
+
+/* #personal {
+  
+} */
+
+.table-widget {
+  display: block;
+  border-radius: 16px;
+  background-color: var(--table-background);
+  padding: 24px;
+  border: 2px solid var(--gray-background);
+  box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+  text-align: left;
+  overflow-x: auto;
+}
+
+.table-widget table {
+  width: 100vw;
+  border-collapse: collapse;
+  padding: 20px;
+}
+
+.table-widget caption {
+  font-size: 1.12rem;
+  font-weight: 700;
+  text-align: left;
+  margin: 8px 0px;
+}
+
+.table-widget th {
+  padding: 20px 16px;
+  font-size: 0.875rem;
+  color: white;
+}
+
+.table-widget thead {
+  border-top: 2px solid var(--gray-background);
+}
+
+.table-widget tfoot {
+  margin-top: 16px;
+  border-top: 2px solid var(--gray-background);
+}
+
+.table-widget td {
+  padding: 8px 16px;
+  vertical-align: middle;
+}
+
+/* .table-widget tbody tr {
+  cursor: pointer;
+} */
+
+.table-widget tbody tr:nth-child(odd) {
+  background-color: var(--odd-row);
+}
+
+.table-widget tbody tr:hover {
+  background-color: #e2ecff;
+}
+
+.table-row-count,
+.table-row-sit {
+  font-size: 0.8rem;
+  font-weight: 700;
+  background-color: var(--gray-mid);
+  padding: 8px;
+  display: inline-flex;
+  align-items: center;
+  margin-left: 16px;
+  border-radius: 8px;
+}
+
+.team-member-profile {
+  display: flex;
+  gap: 16px;
+  align-items: center;
+}
+
+.profile-info {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.profile-info__name {
+  font-weight: 700;
+  white-space: nowrap;
+}
+
+.team-member-profile img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.status {
+  border-radius: 8px;
+  padding: 8px;
+  font-weight: 700;
+}
+
+.status--profesional {
+  background-color: #eafef3;
+  color: #2ecc71;
+}
+
+.status--mid {
+  background-color: #fff6e5;
+  color: #f4bd50;
+}
+
+.status--fresh {
+  background-color: var(--gray-mid);
+  color: var(--gray);
+}
+
+.tags {
+  display: flex;
+  gap: 8px;
+}
+
+.tag {
+  padding: 8px;
+  background-color: var(--gray-mid);
+  border-radius: 8px;
+  font-weight: 700;
+}
+
+.tag::first-letter {
+  text-transform: uppercase;
+}
+
+.tag--listrik {
+  background-color: #f4efff;
+  color: #bb2128;
+}
+
+.tag--instalasi {
+  background-color: #f4efff;
+  color: #9a84da;
+}
+
+.tag--repair {
+  color: #df8fa8;
+  background-color: #fbdde7;
+}
+
+.tag--rumah {
+  background-color: #eaf2ff;
+  color: #739fdc;
+}
+
+.tag--gedung {
+  background-color: #fff6e5;
+  color: #f4bd50;
+}
+
+.tag--building {
+  background-color: #fff6e5;
+  color: #71f450;
+}
+
+.tag--desain {
+  background-color: #fff6e5;
+  color: #2957ee;
+}
+
+.table-widget {
+  min-height: 80px;
+}
+
+.pagination,
+.pagination2 {
+  list-style-type: none;
+  display: flex;
+  gap: 16px;
+  padding: 0px;
+}
+
+.pagination a,
+.pagination2 a {
+  display: block;
+  color: var(--primary);
+  font-size: 1.3rem;
+  text-decoration: none;
+  font-weight: 700;
+  padding: 12px 16px;
+  border-radius: 8px;
+}
+
+.pagination a:hover,
+.pagination2 a:hover,
+a.active {
+  background-color: var(--odd-row);
+  text-decoration: underline;
+}
+
+@keyframes kedip {
+  0% {
+    width: 30%;
+  }
+
+  50% {
+    width: 0%;
+  }
+
+  100% {
+    width: 30%;
+  }
+}
+
+.under {
+  animation: kedip 2s infinite;
+}
+
+.home {
+  opacity: 0.4;
+  cursor: pointer;
+}
+
+.home:hover {
+  opacity: 1;
+}

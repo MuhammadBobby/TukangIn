@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gabung Mitra</title>
+
+    <link rel="icon" href="../assets/logo.png" />
+
+    <!-- tailwind -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Poppins:wght@400;900&display=swap" rel="stylesheet" />
+
+    <!-- style -->
+    <style>
+      body {
+        font-family: poppins;
+      }
+    </style>
+  </head>
+  <body class="bg-slate-600">
+    <header>
+      <h1 class="text-right text-4xl w-2/3 float-right m-5 text-white font-bold lg:text-8xl">Ingin <span class="text-[#02c39a] font-extrabold">Gabung</span> Menjadi Bagian dari Kami ?</h1>
+
+      <div class="clear-both"></div>
+
+      <p class="text-center text-base font-normal text-[#87bdb2] my-5 mx-3 lg:text-xl">Mari menjadi <span class="text-[#02c39a] font-semibold">Mitra TukangIn</span> dan bersama menjadi Tukang terpercaya di Indonesia</p>
+    </header>
+
+    <!-- form -->
+    <section class="flex flex-wrap justify-center bg-slate-500 p-10">
+      <form action="../TukangIn.php" method="post">
+        <h1 class="text-xl font-semibold my-3 text-white lg:text-5xl">Form Pendaftaran</h1>
+
+        <div class="text-center">
+          <label for="nama" class="block text-sm font-light mt-5 lg:text-lg">Masukkan <span class="font-semibold">Nama</span> Anda</label>
+          <input type="text" name="nama" id="nama" class="rounded-lg" required autocomplete="off" /><br />
+        </div>
+        <div class="text-center">
+          <label for="email" class="block text-sm font-light mt-5 lg:text-lg">Masukkan <span class="font-semibold">Email</span> Anda</label>
+          <input type="email" name="email" id="email" class="rounded-lg" required autocomplete="off" /><br />
+        </div>
+
+        <div class="text-center">
+          <label for="jenis" class="block text-sm font-light mt-5 lg:text-lg">Masukkan <span class="font-semibold">Jobdesk</span> Anda</label>
+          <p class="text-white text-[10px] font-thin">*Pastikan Jobdesk sesuai</p>
+          <select name="jenis" id="jenis" class="rounded-lg">
+            <option selected>--pilih Jobdesk--</option>
+            <option value="perbaikan">Tukang Perbaikan</option>
+            <option value="pembuatan">Tukang Pembuatan</option>
+            <option value="Desainer">Desainer</option></select
+          ><br />
+        </div>
+
+        <div class="text-center">
+          <button
+            type="submit"
+            id="submit"
+            class="px-3 py-2 bg-cyan-500 mt-5 rounded-full text-white font-semibold tracking-wider text-sm hover:scale-110 hover:text-cyan-600 hover:bg-white hover:border-2 hover:border-black transition-all lg:text-xl"
+          >
+            Kirim Permintaan
+          </button>
+        </div>
+      </form>
+
+      <div class="w-full mt-8 mb-4">
+        <p class="font-semibold lg:text-xl">Persyaratan Lain :</p>
+        <ul>
+          <li class="text-sm text-white lg:text-lg">
+            Mengirimkan CV (Curiculum Vitae), Surat Lamaran, dan data perusahaan melalui Email <a href="https://mail.google.com/" target="_blank" class="text-cyan-200 font-bold underline">TukangIn@tukang.com</a>
+          </li>
+        </ul>
+
+        <p class="text-xs font-light text-slate-200 pt-20 text-center pb-3">copyright&copy;, Create By Muhammad Bobby</p>
+      </div>
+    </section>
+
+    <!-- home -->
+    <section class="home bg-[#69dbc3] w-fit p-3 rounded-2xl fixed bottom-5 right-5 opacity-30 hover:opacity-100">
+      <a href="../../index.html">
+        <svg role="img" viewBox="0 0 24 24" width="30px" height="25px" class="m-auto" xmlns="http://www.w3.org/2000/svg">
+          <title>Google Home</title>
+          <path
+            d="M12 0a1.44 1.44 0 0 0-.947.399L.547 10.762a1.26 1.26 0 0 0-.342.808v11.138c0 .768.53 1.292 1.311 1.292h20.968c.78 0 1.311-.522 1.311-1.292V11.57a1.25 1.25 0 0 0-.34-.804L15.68 3.097h-.001L12.947.4A1.454 1.454 0 0 0 12 0Zm0 6.727 6.552 6.456v5.65H5.446v-5.65z"
+          />
+        </svg>
+        <p class="text-center text-xs font-semibold">Home</p>
+      </a>
+    </section>
+
+    <!-- <script>
+      const submit = document.getElementById("submit");
+      submit.addEventListener("click", function () {
+        // alert
+        Swal.fire({
+          position: "center",
+          icon: "success",
+          title: "Permintaan anda terkirim, jangan lupa juga untuk mengirim persyaratan lain via email",
+          showConfirmButton: false,
+          timer: 3000,
+        });
+      });
+    </script> -->
+  </body>
+</html>
