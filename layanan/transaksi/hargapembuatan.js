@@ -56,7 +56,7 @@ submit.addEventListener("click", function () {
   }).then((result) => {
     /* Read more about isConfirmed, isDenied below */
     if (result.isConfirmed) {
-      Swal.fire("Pesanan Anda Sukses!", "", "success");
+      Swal.fire("Pesanan Anda Sukses! Silahkan cek Whatsapp untuk pemberitahuan selanjutnya", "", "success");
     } else if (result.isDenied) {
       Swal.fire("Pemesanan Dibatalkan", "", "info");
     }
